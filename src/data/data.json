@@ -1,20 +1,20 @@
 {
     "basil" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "basil",
+            "species" : "ocimum basilicum"
         },
         "stats" : {
-            "lifespan" : "",
+            "lifespan" : "9 to 11 months",
             "seasonal" : true,
-            "seasons" : [],
-            "temperature" : [],
+            "seasons" : ["spring", "summer", "autumn"],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
-                "time" : [],
+                "time" : [7, 12], 
                 "quantity" : []
             }
         },
@@ -35,17 +35,17 @@
     },
     "sage" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "sage",
+            "species" : "salvia officinalis"
         },
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
             "seasons" : [],
-            "temperature" : [],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
                 "time" : [],
@@ -69,17 +69,17 @@
     },
     "rosemary" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "rosemary",
+            "species" : "salvia rosmarinus Schleid"
         },
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
             "seasons" : [],
-            "temperature" : [],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
                 "time" : [],
@@ -103,17 +103,17 @@
     },
     "thyme" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "thyme",
+            "species" : "thymys vulgarius"
         },
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
             "seasons" : [],
-            "temperature" : [],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
                 "time" : [],
@@ -137,51 +137,17 @@
     },
     "mint" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "mint",
+            "species" : "mentha × piperita"
         },
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
             "seasons" : [],
-            "temperature" : [],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
-            },
-            "light" : {
-                "time" : [],
-                "quantity" : []
-            }
-        },
-        "substances" : {
-            "air" : {
-
-            },
-            "terrain" : {
-
-            }
-        },
-        "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
-        }
-    },
-    "chili pepper" : {
-        "name" : {
-            "common" : "",
-            "species" : ""
-        },
-        "stats" : {
-            "lifespan" : "",
-            "seasonal" : true,
-            "seasons" : [],
-            "temperature" : [],
-            "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
                 "time" : [],
@@ -205,17 +171,17 @@
     },
     "chives" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "chives",
+            "species" : "allium schoenoprasum"
         },
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
             "seasons" : [],
-            "temperature" : [],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
                 "time" : [],
@@ -239,17 +205,17 @@
     },
     "parsley" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "parsley",
+            "species" : "petroselinum crispum"
         },
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
             "seasons" : [],
-            "temperature" : [],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
                 "time" : [],
@@ -273,17 +239,17 @@
     },
     "origan" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "origan",
+            "species" : "origanum "
         },
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
             "seasons" : [],
-            "temperature" : [],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
                 "time" : [],
@@ -307,17 +273,17 @@
     },
     "marjoram" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "marjoram",
+            "species" : "origanum majorana "
         },
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
             "seasons" : [],
-            "temperature" : [],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
                 "time" : [],
@@ -341,17 +307,17 @@
     },
     "coriander" : {
         "name" : {
-            "common" : "",
-            "species" : ""
+            "common" : "coriander",
+            "species" : "coriandrum sativum"
         },
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
             "seasons" : [],
-            "temperature" : [],
+            "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
-                "terrain" : [],
-                "air" : []
+                "terrain" : [18, 25, 21],
+                "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
                 "time" : [],
