@@ -27,10 +27,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     },
     "sage" : {
@@ -61,10 +67,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     },
     "rosemary" : {
@@ -95,10 +107,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     },
     "thyme" : {
@@ -129,10 +147,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     },
     "mint" : {
@@ -163,10 +187,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     },
     "chives" : {
@@ -197,10 +227,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     },
     "parsley" : {
@@ -231,10 +267,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     },
     "origan" : {
@@ -265,10 +307,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     },
     "marjoram" : {
@@ -299,10 +347,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     },
     "coriander" : {
@@ -333,10 +387,16 @@
             }
         },
         "watering" : {
-            "moments" : [],
-            "amount" : [],
-            "tpw" : 7,
-            "temperature" : ""
+            "seasons" : [
+                {
+                   "lable" : "summer",
+                   "times" : [2, 1]
+                },
+                {
+                    "lable" : "winter, spring, autumn",
+                    "times" : [1, 1] 
+                }
+            ]
         }
     }
 }
