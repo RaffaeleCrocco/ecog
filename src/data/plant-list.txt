@@ -1,0 +1,11 @@
+basil
+sage
+rosemary
+thyme
+mint
+chili pepper
+chives
+parsley
+origan
+marjoram
+coriander

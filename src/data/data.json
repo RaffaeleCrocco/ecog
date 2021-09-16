@@ -1,0 +1,376 @@
+{
+    "basil" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "sage" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "rosemary" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "thyme" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "mint" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "chili pepper" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "chives" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "parsley" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "origan" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "marjoram" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    },
+    "coriander" : {
+        "name" : {
+            "common" : "",
+            "species" : ""
+        },
+        "stats" : {
+            "lifespan" : "",
+            "seasonal" : true,
+            "seasons" : [],
+            "temperature" : [],
+            "humidity" : {
+                "terrain" : [],
+                "air" : []
+            },
+            "light" : {
+                "time" : [],
+                "quantity" : []
+            }
+        },
+        "substances" : {
+            "air" : {
+
+            },
+            "terrain" : {
+
+            }
+        },
+        "watering" : {
+            "moments" : [],
+            "amount" : [],
+            "tpw" : 7,
+            "temperature" : ""
+        }
+    }
+}
