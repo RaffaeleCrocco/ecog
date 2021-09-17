@@ -7,14 +7,14 @@
         "stats" : {
             "lifespan" : "9 to 11 months",
             "seasonal" : true,
-            "seasons" : ["spring", "summer", "autumn"],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
                 "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
-                "time" : [7, 12], 
+                "time" : [7, 12],
                 "quantity" : []
             }
         },
@@ -44,7 +44,7 @@
         "stats" : {
             "lifespan" : "6 years",
             "seasonal" : false,
-            "seasons" : [],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [10.0, 30.0, 20.0],
             "humidity" : {
                 "terrain" : [18, 25, 21],
@@ -81,7 +81,7 @@
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
-            "seasons" : [],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
@@ -118,7 +118,7 @@
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
-            "seasons" : [],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
@@ -155,7 +155,7 @@
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
-            "seasons" : [],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
@@ -192,7 +192,7 @@
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
-            "seasons" : [],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
@@ -229,7 +229,7 @@
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
-            "seasons" : [],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
@@ -266,7 +266,7 @@
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
-            "seasons" : [],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
@@ -303,7 +303,7 @@
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
-            "seasons" : [],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
@@ -340,7 +340,7 @@
         "stats" : {
             "lifespan" : "",
             "seasonal" : true,
-            "seasons" : [],
+            "months" : ["june", "july", "august", "semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
