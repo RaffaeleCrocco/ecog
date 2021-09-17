@@ -45,16 +45,16 @@
             "species" : "salvia officinalis"
         },
         "stats" : {
-            "lifespan" : "",
-            "seasonal" : true,
+            "lifespan" : "6 years",
+            "seasonal" : false,
             "seasons" : [],
-            "temperature" : [20.0, 25.0, 22.5],
+            "temperature" : [10.0, 30.0, 20.0],
             "humidity" : {
                 "terrain" : [18, 25, 21],
                 "air" : [40.0, 65.0, 55.0]
             },
             "light" : {
-                "time" : [],
+                "time" : [12, 12],
                 "quantity" : []
             }
         },
@@ -70,11 +70,11 @@
             "seasons" : [
                 {
                    "lable" : "summer",
-                   "times" : [2, 1]
+                   "times" : [1, 2]
                 },
                 {
                     "lable" : "winter, spring, autumn",
-                    "times" : [1, 1] 
+                    "times" : [0, 1] 
                 }
             ]
         }
