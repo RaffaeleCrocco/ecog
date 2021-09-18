@@ -52,6 +52,7 @@ const Temperature = () => {
                             <li>Minimum consented temperature: 20° </li>
                             <li>Maximum consented temperature: 25° </li>
                             <li>Ideal temperature for the plant: <strong>22.5°</strong></li>
+                            <li>Current temperature in the system: <strong>23°</strong></li>
                         </ul>
                     </div>
                 </Col> 

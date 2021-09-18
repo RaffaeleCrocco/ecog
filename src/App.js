@@ -6,7 +6,7 @@ import './style/App.scss'                     //style
 
 function App() {
   return (
-    <div>
+    <div className="app-wrapper">
       <Router>
         <Route path="/" exact render={() => <Dashboard/>}/>
         <Route path="/documentation" render={() => <Documentation/>}/>      

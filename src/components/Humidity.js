@@ -49,8 +49,8 @@ const Humidity = () => {
                     <div>
                         <h2>Humidity</h2>
                         <ul>
-                            <li>Ideal air humidity: <strong>22.5°</strong></li>
-                            <li>Ideal terrain humidity: <strong>22.5°</strong></li>
+                            <li>Ideal air humidity: <strong>22.5%</strong>, the current one is: <strong>23%</strong></li>
+                            <li>Ideal terrain humidity: <strong>22.5%</strong>, the current one is: <strong>23%</strong></li>
                         </ul>
                     </div>
                 </Col>

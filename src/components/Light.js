@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Cell } from 'recharts';
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 
 const data = [
@@ -49,9 +49,12 @@ const Light = () => {
                     <div>
                         <h2>Light</h2>
                         <ul>
-                            <li>Sunlight hours exposure: 7 </li>
-                            <li>Artificial light hours exposure: 12 </li>
+                            <li>Required sunlight exposure: 7h</li>
+                            <li>Suggest artificial light exposure: 12h </li>
+                            <li>Current state: <strong>exposed</strong></li>
+                            
                         </ul>
+                        <Button size="sm" variant="outline-success">Attivate internal light</Button>
                     </div>
                 </Col> 
             </Row>

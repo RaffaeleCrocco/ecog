@@ -14,7 +14,7 @@ const Dashboard = () => {
       <Container className="d-flex justify-content-center align-items-center mt-5">
       <div>
         <Row>
-          <Col className="d-flex justify-content-center align-items-center" xs="6">
+          <Col className="d-flex justify-content-center align-items-around" xs="6">
             <div>
               <Temperature/>
               <Light/>
