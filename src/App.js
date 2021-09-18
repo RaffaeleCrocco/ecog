@@ -2,6 +2,8 @@ import Dashboard from './pages/Dashboard';
 import Documentation from './pages/Documentation';
 import {Route, BrowserRouter as Router} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './style/App.scss'                     //style
+
 function App() {
   return (
     <div>

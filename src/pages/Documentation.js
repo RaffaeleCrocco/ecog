@@ -2,10 +2,12 @@ import React from 'react';
 
 import '../style/Documentation.scss'                     //style
 import { Container, Table, Alert } from 'react-bootstrap';      //component
+import Navigation from '../components/Navigation.js'
 
 const Documentation = () => {
     return (
         <div>
+            <Navigation/>
             <Container>
                 <h1 className="doc-paragraph" variant="primary"># API Documentation</h1>
                 <p>

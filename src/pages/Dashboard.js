@@ -1,15 +1,39 @@
-import React from 'react';
+import React from "react";
+import Temperature from "../components/Temperature";
+import { Container, Row, Col } from "react-bootstrap";
+import Humidity from "../components/Humidity";
+import Light from "../components/Light";
+import Air from "../components/Air";
+import Navigation from "../components/Navigation";
 
-import { Container } from 'react-bootstrap';      //component
 
 const Dashboard = () => {
-    return (
-        <div>
-            <Container>
-                Dashboard
-            </Container>
-        </div>
-    );
-};
+  return (
+    <div>
+      <Navigation/>
+      <Container className="d-flex justify-content-center align-items-center mt-5">
+      <div>
+        <Row>
+          <Col className="d-flex justify-content-center align-items-center" xs="6">
+            <div>
+              <Temperature/>
+              <Light/>
+            </div>
+          </Col>
+          <Col className="d-flex justify-content-center align-items-center">
+            <Humidity/>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="d-flex justify-content-center align-items-center">
+            <Air/>
+          </Col>
+        </Row>        
+      </div>
+    </Container>
+    </div>
+    
+  );
+}
 
-export default Dashboard;
+export default Dashboard
