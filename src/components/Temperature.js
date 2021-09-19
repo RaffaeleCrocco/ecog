@@ -1,10 +1,11 @@
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Cell } from 'recharts';
 import { Container, Row, Col } from "react-bootstrap";
+import database from '../data/data.json'
 
 
 const data = [
-    { name: "Group A", value: 600 },
+    { name: "Group A", value: 900 },
     { name: "Group B", value: 100 },
   ];
   

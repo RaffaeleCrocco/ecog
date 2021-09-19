@@ -1,22 +1,44 @@
 import React from 'react';
+
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import logo from '../media/logo.svg'
+import data from '../data/data.json'
+import Select from 'react-select'
 
 const Navigation = () => {
+
+    //obtaining the list of the avaiable plants
+    const options = []
+    for(var plant in data) {
+        options.push(
+            {
+                value: data[plant].name.common,
+                label: data[plant].name.common
+            }
+        )
+    }
+
     return (
         <div>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="transparent" expand="lg">
                 <Container>
                     <Link to="/">
-                        <Navbar.Brand href="#home">Eco-g prototype</Navbar.Brand>
+                        <Navbar.Brand href="#home">
+                            <img src={logo} alt="logo" style={{width:'80px',paddingTop:'20px'}}/>
+                            <span style={{paddingLeft:'20px'}}>eco-g prototype</span>
+                        </Navbar.Brand>
                     </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto">
-                        <Link to="/documentation">
-                            <Nav.Link href="#home">Nerdy stuff</Nav.Link>
-                        </Link>
-                    </Nav>
+                        <Nav className="ms-auto">
+                            <Nav.Link style={{width: '200px', marginTop:'-6px'}}>
+                                <Select options={options} />
+                            </Nav.Link>
+                            <Link to="/documentation">
+                                <Nav.Link href="#home">Nerdy stuff</Nav.Link>
+                            </Link>
+                        </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
