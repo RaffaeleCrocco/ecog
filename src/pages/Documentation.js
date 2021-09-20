@@ -3,7 +3,6 @@ import React from 'react';
 import '../style/Documentation.scss'                     //style
 import { Container, Table, Alert } from 'react-bootstrap';      //component
 import Navigation from '../components/Navigation.js'
-
 const Documentation = () => {
     return (
         <div>
@@ -15,7 +14,7 @@ const Documentation = () => {
                     This table show the fields used for every plant in the database. 
                 </p>
                 <Alert variant="success">
-                    Plants data are stored in a .json file you can access form <Alert.Link href="#">here</Alert.Link>.
+                    Plants data are stored in a .json file you can access form <Alert.Link  href="https://raw.githubusercontent.com/RaffaeleCrocco/ecog-app/main/src/data/data.json" target="_blank">here</Alert.Link>.
                 </Alert>
                 <Table className="doc-table" striped bordered hover responsive size="sm">
                 <thead>
@@ -57,25 +56,25 @@ const Documentation = () => {
                     <tr>
                         <td className="code-like">month</td>
                         <td className="code-like">/</td>
-                        <td>Array of Strings</td>
+                        <td>Array of strings</td>
                         <td>Indicate the month in which a plant can live during the year.</td>
                     </tr>
                     <tr>
                         <td className="code-like">temperature</td>
                         <td className="code-like">/</td>
                         <td>Array of floats</td>
-                        <td>Indicate the ideal temperature of a plant environment. <br/> Structured with minimum, maximum and average temperature [min, max, avg].</td>
+                        <td>Indicate the ideal temperature of a plant environment. <br/> Structured with minimum, maximum and ideal temperature [min, max, ideal].</td>
                     </tr>
                     <tr>
                         <td rowSpan="2" className="code-like">humidity</td>
                         <td className="code-like">terrain</td>
                         <td>Array of integers</td>
-                        <td>With minimum, maximum and average humidity in percentage [min, max, avg].</td>
+                        <td>With minimum, maximum and ideal humidity in percentage [min, max, ideal].</td>
                     </tr>
                     <tr>
                         <td className="code-like">air</td>
                         <td>Array of integers</td>
-                        <td>With minimum, maximum and average humidity in percentage [min, max, avg].</td>
+                        <td>With minimum, maximum and ideal humidity in percentage [min, max, ideal].</td>
                     </tr>
                     <tr>
                         <td className="code-like">light</td>

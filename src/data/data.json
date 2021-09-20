@@ -7,7 +7,7 @@
         "stats" : {
             "lifespan" : "9 to 11 months",
             "seasonal" : true,
-            "months" : ["june", "july", "august", "semptember"],
+            "months" : [" june", " july", " august", " semptember"],
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
@@ -46,11 +46,11 @@
             "months" : ["june", "july", "august", "semptember"],
             "temperature" : [10.0, 30.0, 20.0],
             "humidity" : {
-                "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "terrain" : [30, 40, 35],
+                "air" : [43, 22, 55]
             },
             "light" : {
-                "time" : [12, 12]
+                "time" : [12, 2]
             }
         },
         "substances" : {

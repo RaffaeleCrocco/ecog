@@ -1,24 +1,36 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import database from '../data/data.json'
+import fakeSensor from '../data/fake-sensors-data.json' 
+import {IoWaterOutline} from 'react-icons/io5'
 
-const data = [
-    {
-      name: 'Air humidity',
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
-    },
-    {
-      name: 'Terrain humidity',
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
-    }
-  ];
+
   
 
-const Humidity = () => {
+const Humidity = (props) => {
+
+    const idealTerrain = database[props.plant].stats.humidity.terrain[2]
+    const idealAir = database[props.plant].stats.humidity.air[2]
+
+    var currentTerrain = fakeSensor.humidity.terrain
+    var currentAir = fakeSensor.humidity.air
+
+    const data = [
+        {
+          name: 'Air humidity',
+          uv: idealAir,
+          pv: currentAir,
+          //amt: 2400,
+        },
+        {
+          name: 'Terrain humidity',
+          uv: idealTerrain,
+          pv: currentTerrain,
+          //amt: 2210,
+        }
+    ];
+
     return (
         <div>
             <Row>
@@ -47,10 +59,10 @@ const Humidity = () => {
             <Row>
                 <Col className="d-flex justify-content-center align-items-center">
                     <div>
-                        <h2>Humidity</h2>
+                        <h3><IoWaterOutline/>Humidity</h3>
                         <ul>
-                            <li>Ideal air humidity: <strong>22.5%</strong>, the current one is: <strong>23%</strong></li>
-                            <li>Ideal terrain humidity: <strong>22.5%</strong>, the current one is: <strong>23%</strong></li>
+                            <li>Ideal air humidity: <strong>{idealAir}%</strong>, the current one is: <strong>{currentAir}%</strong></li>
+                            <li>Ideal terrain humidity: <strong>{idealTerrain}%</strong>, the current one is: <strong>{currentTerrain}%</strong></li>
                         </ul>
                     </div>
                 </Col>

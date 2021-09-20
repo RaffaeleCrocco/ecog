@@ -2,18 +2,12 @@ import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Cell } from 'recharts';
 import { Container, Row, Col } from "react-bootstrap";
 import database from '../data/data.json'
-
-
-const data = [
-    { name: "Group A", value: 900 },
-    { name: "Group B", value: 100 },
-  ];
+import fakeSensor from '../data/fake-sensors-data.json'
+import {AiOutlineFire} from "react-icons/ai" 
   
-const COLORS = ['#1d9605', '#ffffff'];
 
 
-
-const Temperature = () => {
+const Temperature = (props) => {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const onPieEnter = useCallback(
@@ -23,7 +17,22 @@ const Temperature = () => {
         [setActiveIndex]
     );
 
+    var current = fakeSensor.temperature
+    const ideal = database[props.plant].stats.temperature[2]
 
+    console.log(current)
+    console.log(ideal)
+
+    var scarto = (current < ideal) ? ideal - current : current - ideal
+
+    console.log(scarto)
+    
+    const data = [
+        { name: "Group A", value: current },
+        { name: "Group B", value: scarto },
+    ];
+
+    const COLORS = ['#1d9605', '#ffffff'];
 
     return (
         <Container>
@@ -48,12 +57,12 @@ const Temperature = () => {
                 </Col>
                 <Col className="d-flex justify-content-center align-items-center">
                     <div>
-                        <h2>Temperature</h2>
+                        <h3><AiOutlineFire/>  Temperature</h3>
                         <ul>
-                            <li>Minimum consented temperature: 20° </li>
-                            <li>Maximum consented temperature: 25° </li>
-                            <li>Ideal temperature for the plant: <strong>22.5°</strong></li>
-                            <li>Current temperature in the system: <strong>23°</strong></li>
+                            <li>Minimum consented temperature: {database[props.plant].stats.temperature[0]}° </li>
+                            <li>Maximum consented temperature: {database[props.plant].stats.temperature[1]}° </li>
+                            <li>Ideal temperature for the plant: <strong>{database[props.plant].stats.temperature[2]}°</strong></li>
+                            <li>Current temperature: <strong>{current}°</strong></li>
                         </ul>
                     </div>
                 </Col> 

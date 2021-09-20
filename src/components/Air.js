@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import {FiWind} from 'react-icons/fi'
 
 const data = [
     {
@@ -52,7 +53,7 @@ const Air = () => {
         <Row>
             <Col className="d-flex justify-content-center align-items-center">
                     <div>
-                        <h2>Air quality</h2>
+                        <h3><FiWind/> Air quality</h3>
                         <ul>
                             <li>CO2 quantity in the air: 7 </li>
                             <li>Azote quantity in the air: 7 </li>

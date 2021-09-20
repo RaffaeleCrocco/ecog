@@ -1,18 +1,20 @@
 import React, { useCallback, useState } from "react";
 import { PieChart, Pie, Cell } from 'recharts';
 import { Container, Row, Col, Button } from "react-bootstrap";
+import database from '../data/data.json'
+import {GoLightBulb} from "react-icons/go" 
 
 
 const data = [
     { name: "Group A", value: 600 },
     { name: "Group B", value: 50 },
-  ];
+];
   
-const COLORS = ['#68d651', '#ffffff'];
+const COLORS = ['#e6bf00', '#ffffff'];
 
 
 
-const Light = () => {
+const Light = (props) => {
 
     const [activeIndex, setActiveIndex] = useState(0);
     const onPieEnter = useCallback(
@@ -21,7 +23,6 @@ const Light = () => {
         },
         [setActiveIndex]
     );
-
 
 
     return (
@@ -47,10 +48,10 @@ const Light = () => {
                 </Col>
                 <Col className="d-flex justify-content-center align-items-center">
                     <div>
-                        <h2>Light</h2>
+                        <h3><GoLightBulb/> Light</h3>
                         <ul>
-                            <li>Required sunlight exposure: 7h</li>
-                            <li>Suggest artificial light exposure: 12h </li>
+                            <li>Required sunlight exposure: {database[props.plant].stats.light.time[0]}h</li>
+                            <li>Suggest artificial light exposure: {database[props.plant].stats.light.time[1]}h </li>
                             <li>Current state: <strong>exposed</strong></li>
                             
                         </ul>
