@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import database from '../data/data.json'
 import fakeSensor from '../data/fake-sensors-data.json' 
 import {IoWaterOutline} from 'react-icons/io5'
@@ -59,11 +59,12 @@ const Humidity = (props) => {
             <Row>
                 <Col className="d-flex justify-content-center align-items-center">
                     <div>
-                        <h3><IoWaterOutline/>Humidity</h3>
-                        <ul>
-                            <li>Ideal air humidity: <strong>{idealAir}%</strong>, the current one is: <strong>{currentAir}%</strong></li>
-                            <li>Ideal terrain humidity: <strong>{idealTerrain}%</strong>, the current one is: <strong>{currentTerrain}%</strong></li>
-                        </ul>
+                        <h4>Humidity</h4>
+                        {/* <IoWaterOutline/> */}
+                        <p>
+                            The ideal <i> air humidity </i> seems to be {idealAir}%, the current one is: <strong>{currentAir}%</strong>. <br/>
+                            The ideal <i> terrain humidity </i> is {idealTerrain}%, the current one is: <strong>{currentTerrain}%</strong>.
+                        </p>
                     </div>
                 </Col>
             </Row>

@@ -53,7 +53,8 @@ const Air = () => {
         <Row>
             <Col className="d-flex justify-content-center align-items-center">
                     <div>
-                        <h3><FiWind/> Air quality</h3>
+                        <h4>Air quality</h4>
+                        {/* <FiWind/>  */}
                         <ul>
                             <li>CO2 quantity in the air: 7 </li>
                             <li>Azote quantity in the air: 7 </li>

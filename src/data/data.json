@@ -26,11 +26,11 @@
             "month" : [
                 {
                    "lable" : "august",
-                   "times" : [2, 1]
+                   "times" : ["2 times", "day"]
                 },
                 {
-                    "lable" : "*",
-                    "times" : [1, 1] 
+                    "lable" : "the rest of the year",
+                    "times" : ["1 time", "day"] 
                 }
             ]
         }

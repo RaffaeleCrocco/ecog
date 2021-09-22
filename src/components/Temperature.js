@@ -19,13 +19,9 @@ const Temperature = (props) => {
 
     var current = fakeSensor.temperature
     const ideal = database[props.plant].stats.temperature[2]
-
-    console.log(current)
-    console.log(ideal)
-
     var scarto = (current < ideal) ? ideal - current : current - ideal
 
-    console.log(scarto)
+
     
     const data = [
         { name: "Group A", value: current },
@@ -57,12 +53,14 @@ const Temperature = (props) => {
                 </Col>
                 <Col className="d-flex justify-content-center align-items-center">
                     <div>
-                        <h3><AiOutlineFire/>  Temperature</h3>
+                        <h4>Temperature</h4>
+                        {/* <AiOutlineFire/>   */}
+                        <p> 
+                            Plants temperature should remain between {database[props.plant].stats.temperature[0]}°C 
+                            and {database[props.plant].stats.temperature[1]}°C. Indeed the best temperature is <strong>{database[props.plant].stats.temperature[2]}°C</strong>.
+                        </p>
                         <ul>
-                            <li>Minimum consented temperature: {database[props.plant].stats.temperature[0]}° </li>
-                            <li>Maximum consented temperature: {database[props.plant].stats.temperature[1]}° </li>
-                            <li>Ideal temperature for the plant: <strong>{database[props.plant].stats.temperature[2]}°</strong></li>
-                            <li>Current temperature: <strong>{current}°</strong></li>
+                           <li>Current temperature: <strong>{current}°</strong></li>
                         </ul>
                     </div>
                 </Col> 

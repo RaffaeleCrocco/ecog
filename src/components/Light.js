@@ -10,7 +10,7 @@ const data = [
     { name: "Group B", value: 50 },
 ];
   
-const COLORS = ['#e6bf00', '#ffffff'];
+const COLORS = ['#226914', '#ffffff'];
 
 
 
@@ -48,13 +48,13 @@ const Light = (props) => {
                 </Col>
                 <Col className="d-flex justify-content-center align-items-center">
                     <div>
-                        <h3><GoLightBulb/> Light</h3>
-                        <ul>
-                            <li>Required sunlight exposure: {database[props.plant].stats.light.time[0]}h</li>
-                            <li>Suggest artificial light exposure: {database[props.plant].stats.light.time[1]}h </li>
-                            <li>Current state: <strong>exposed</strong></li>
-                            
-                        </ul>
+                        <h4> Light</h4>
+                        {/* <GoLightBulb/> */}
+                        <p>
+                            This plant require {database[props.plant].stats.light.time[0]} hours of sunlight exposure.
+                            When not possible, try to provide at least {database[props.plant].stats.light.time[1]} hours of
+                            artificial light exposure. Current state: <strong>exposed</strong>
+                        </p>
                         <Button size="sm" variant="outline-success">Attivate internal light</Button>
                     </div>
                 </Col> 
