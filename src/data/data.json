@@ -11,7 +11,7 @@
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "air" : [25, 55, 40]
             },
             "light" : {
                 "time" : [7, 12]
@@ -41,16 +41,16 @@
             "species" : "salvia officinalis"
         },
         "stats" : {
-            "lifespan" : "6 years",
+            "lifespan" : "4-5 years",
             "seasonal" : false,
-            "months" : ["june", "july", "august", "semptember"],
+            "months" : [],
             "temperature" : [10.0, 30.0, 20.0],
             "humidity" : {
-                "terrain" : [30, 40, 35],
-                "air" : [43, 22, 55]
+                "terrain" : [25, 30, 35],
+                "air" : [25, 55, 40]
             },
             "light" : {
-                "time" : [12, 2]
+                "time" : [12, 12]
             }
         },
         "substances" : {
@@ -61,12 +61,8 @@
         "watering" : {
             "month" : [
                 {
-                   "lable" : "summer",
-                   "times" : [1, 2]
-                },
-                {
-                    "lable" : "winter, spring, autumn",
-                    "times" : [0, 1] 
+                   "lable" : "the entire year",
+                   "times" : ["1 time", "time the terrain is dry"]
                 }
             ]
         }
@@ -83,7 +79,7 @@
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "air" : [25, 55, 40]
             },
             "light" : {
                 "time" : []
@@ -119,7 +115,7 @@
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "air" : [25, 55, 40]
             },
             "light" : {
                 "time" : []
@@ -155,7 +151,7 @@
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "air" : [25, 55, 40]
             },
             "light" : {
                 "time" : []
@@ -191,7 +187,7 @@
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "air" : [25, 55, 40]
             },
             "light" : {
                 "time" : []
@@ -227,7 +223,7 @@
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "air" : [25, 55, 40]
             },
             "light" : {
                 "time" : []
@@ -263,7 +259,7 @@
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "air" : [25, 55, 40]
             },
             "light" : {
                 "time" : []
@@ -299,7 +295,7 @@
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "air" : [25, 55, 40]
             },
             "light" : {
                 "time" : []
@@ -335,7 +331,7 @@
             "temperature" : [20.0, 25.0, 22.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [40.0, 65.0, 55.0]
+                "air" : [25, 55, 40]
             },
             "light" : {
                 "time" : []

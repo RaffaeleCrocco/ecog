@@ -1,5 +1,5 @@
 {
-    "temperature": 20,
+    "temperature": 23.5,
     "humidity" : {
         "air" : 20,
         "terrain" : 50
