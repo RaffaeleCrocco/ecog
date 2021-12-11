@@ -25,6 +25,12 @@ const Light = (props) => {
     );
 
 
+    let ledOn = '0'
+    function handleLightChange(){
+        fetch('/led', {method: 'PUT', body: '1'})
+            .then(response => response.text())
+    }
+
     return (
         <Container>
             <Row>
@@ -55,7 +61,7 @@ const Light = (props) => {
                             When not possible, try to provide at least {database[props.plant].stats.light.time[1]} hours of
                             artificial light exposure. Current state: <strong>exposed</strong>
                         </p>
-                        <Button size="sm" variant="outline-success">Attivate internal light</Button>
+                        <Button size="sm" variant="outline-success" onClick={()=>handleLightChange()}>Attivate internal light</Button>
                     </div>
                 </Col> 
             </Row>
