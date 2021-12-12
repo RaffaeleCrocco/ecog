@@ -1,10 +1,7 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { Col, Row, ProgressBar } from 'react-bootstrap';
 import database from '../data/data.json'
 import fakeSensor from '../data/fake-sensors-data.json' 
-import {IoWaterOutline} from 'react-icons/io5'
-
 
   
 
@@ -16,55 +13,41 @@ const Humidity = (props) => {
     var currentTerrain = fakeSensor.humidity.terrain
     var currentAir = fakeSensor.humidity.air
 
-    const data = [
-        {
-          name: 'Air humidity',
-          uv: idealAir,
-          pv: currentAir,
-          //amt: 2400,
-        },
-        {
-          name: 'Terrain humidity',
-          uv: idealTerrain,
-          pv: currentTerrain,
-          //amt: 2210,
-        }
-    ];
+    const terHumBar = <ProgressBar variant="secondary" now={currentTerrain} label={`${currentTerrain}%`} />;
+    const airHumBar = <ProgressBar variant="secondary" now={currentAir} label={`${currentAir}%`} />;
+
+
+
 
     return (
         <div>
-            <Row>
-                <Col>
-                    <BarChart
-                    width={400}
-                    height={300}
-                    data={data}
-                    margin={{
-                        top: 5,
-                        right: 30,
-                        left: 20,
-                        bottom: 5
-                    }}
-                    >
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="name" />
-                        <YAxis />
-                        <Tooltip />
-                        {/* <Legend /> */}
-                        <Bar dataKey="pv" fill="#5fad50" />
-                        <Bar dataKey="uv" fill="#226914" />
-                    </BarChart>
-                </Col>
-            </Row>
             <Row>
                 <Col className="d-flex justify-content-center align-items-center">
                     <div>
                         <h4>Humidity</h4>
                         {/* <IoWaterOutline/> */}
-                        <p>
-                            The ideal <i> air humidity </i> seems to be {idealAir}%, the current one is: <strong>{currentAir}%</strong>. <br/>
-                            The ideal <i> terrain humidity </i> is {idealTerrain}%, the current one is: <strong>{currentTerrain}%</strong>.
+                        <p className='mt-4'>
+                            The ideal <i> air humidity </i> seems to be {idealAir}%, the current one is: <strong>{currentAir}%</strong>.
+                            <Row>
+                                <Col sm="3" className="d-flex justify-content-end">Current:</Col>
+                                <Col className="mt-1">{airHumBar}</Col>
+                            </Row>
+                            <Row>
+                                <Col sm="3" className="d-flex justify-content-end">Best one:</Col>
+                                <Col><ProgressBar className='mt-1' variant="success" now={idealAir} label={`${idealAir}%`} /></Col>
+                            </Row>
                         </p>
+                        <p className='mt-4'>
+                            The ideal <i> terrain humidity </i> is {idealTerrain}%, the current one is: <strong>{currentTerrain}%</strong>.
+                            <Row>
+                                <Col sm="3" className="d-flex justify-content-end">Current:</Col>
+                                <Col className="mt-1">{terHumBar}</Col>
+                            </Row>
+                            <Row>
+                                <Col sm="3" className="d-flex justify-content-end">Best one:</Col>
+                                <Col><ProgressBar className='mt-1' variant="success" now={idealTerrain} label={`${idealTerrain}%`} /></Col>
+                            </Row>
+                        </p>                        
                     </div>
                 </Col>
             </Row>

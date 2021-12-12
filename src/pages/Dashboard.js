@@ -93,6 +93,7 @@ const Dashboard = (props) => {
             <Col className="d-flex justify-content-center align-items-around" xs="6">
               <div>
                 <Temperature plant={props.plant}/>
+                <br/>
                 <Light plant={props.plant} className="mt-2"/>
               </div>
             </Col>
@@ -100,11 +101,13 @@ const Dashboard = (props) => {
               <Humidity plant={props.plant}/>
             </Col>
           </Row>
+          {/* 
           <Row>
             <Col className="d-flex justify-content-center align-items-center mb-4 mt-3">
               <Air plant={props.plant}/>
             </Col>
-          </Row>       
+          </Row>        
+          */}
         </div>
       </Container>
     </div>
