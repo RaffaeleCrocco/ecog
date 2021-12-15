@@ -1,12 +1,13 @@
 import React from "react";
 import Temperature from "../components/Temperature";
-import { Container, Row, Col, Alert } from "react-bootstrap";
+import { Container, Row, Col, Alert, Card } from "react-bootstrap";
 import Humidity from "../components/Humidity";
 import Light from "../components/Light";
 import Air from "../components/Air";
 import Navigation from "../components/Navigation";
 import database from "../data/data.json"
 import {RiPlantLine} from "react-icons/ri"
+import Documentation from "./Documentation"
 
 
 const Dashboard = (props) => {
@@ -64,10 +65,10 @@ const Dashboard = (props) => {
   return (
     <div>
       <Navigation plant={props.plant} setPlant={props.setPlant}/>
-      <Container className="d-flex justify-content-center align-items-center mt-3">
+      <Container className="d-flex justify-content-center align-items-center mt-4">
         <div>
           <Row>
-            <Col>
+            <Col sm="12">
                 <Alert variant="success" xs="auto">
                   <Row>
                     <Col xs="auto">
@@ -89,25 +90,27 @@ const Dashboard = (props) => {
                 </Alert>
             </Col>
           </Row>
-          <Row className="mt-3">
-            <Col className="d-flex justify-content-center align-items-around" xs="6">
-              <div>
-                <Temperature plant={props.plant}/>
-                <br/>
-                <Light plant={props.plant} className="mt-2"/>
-              </div>
+          <Row className="mb-5">
+            <Col>
+              <Row className="mt-5">
+                <Col md="">
+                  <Temperature plant={props.plant}/>
+                </Col>
+              </Row>
+              <Row className="mt-5">
+                <Col md="">
+                  <Humidity plant={props.plant}/> 
+                </Col>
+              </Row>
             </Col>
-            <Col className="d-flex justify-content-center align-items-center">
-              <Humidity plant={props.plant}/>
+            <Col sm="3" className="d-flex mt-5">
+              <Card>
+                <Card.Body className="mt-4">
+                  <Light plant={props.plant}/>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
-          {/* 
-          <Row>
-            <Col className="d-flex justify-content-center align-items-center mb-4 mt-3">
-              <Air plant={props.plant}/>
-            </Col>
-          </Row>        
-          */}
         </div>
       </Container>
     </div>

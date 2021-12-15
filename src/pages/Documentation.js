@@ -8,7 +8,80 @@ const Documentation = () => {
         <div>
             <Navigation/>
             <Container>
-                <h1 className="doc-paragraph" variant="primary"># API Documentation</h1>
+                <h1 className="doc-paragraph" variant="primary"># Microcontroller server API Documentation</h1>
+                <p>
+                    The device takes data from all the sensor and though the <span className="code-like">ESP8622</span> host this data in the following paths.
+                </p>
+                <Table className="doc-table" striped bordered hover responsive size="sm">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Specific name</th>
+                        <th>Method</th>
+                        <th>Path</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowSpan="2">Internal light</td>
+                        <td rowSpan="2">/</td>
+                        <td className="code-like">GET</td>
+                        <td className="code-like">/led</td>
+                        <td className="code-like">Boolean</td>
+                        <td>Getting the current state of the internal light.</td>
+                    </tr>
+                    <tr>
+                        <td className="code-like">PUT</td>
+                        <td className="code-like">/led</td>
+                        <td className="code-like">Boolean</td>
+                        <td>Setting the state of the internal light.</td>
+                    </tr>
+                    <tr>
+                        <td rowSpan="2">Air temperature and humidity</td>
+                        <td rowSpan="2">DHT11</td>
+                        <td className="code-like">GET</td>
+                        <td className="code-like">/airtemp</td>
+                        <td className="code-like">float</td>
+                        <td>Current air temperature of the device.</td>
+                    </tr>
+                    <tr>
+                        <td className="code-like">GET</td>
+                        <td className="code-like">/airhum</td>
+                        <td className="code-like">Int</td>
+                        <td>Current air humidity of the device.</td>
+                    </tr>
+                    <tr>
+                        <td>Terrain humidity</td>
+                        <td>/</td>
+                        <td className="code-like">GET</td>
+                        <td className="code-like">/terrhum</td>
+                        <td className="code-like">float</td>
+                        <td>Raw number rapresenting the terrain humidy (still not converted).</td>
+                    </tr>
+                    <tr>
+                        <td>Terrain temperature</td>
+                        <td>DS18B20</td>
+                        <td className="code-like">GET</td>
+                        <td className="code-like">/terrtemp</td>
+                        <td className="code-like">float</td>
+                        <td>Raw number rapresenting the terrain temperature (still not converted).</td>
+                    </tr>
+                    <tr>
+                        <td>Light sensor</td>
+                        <td>/</td>
+                        <td className="code-like">GET</td>
+                        <td className="code-like">/light</td>
+                        <td className="code-like">/</td>
+                        <td>/</td>
+                    </tr>
+                </tbody>
+                </Table>
+                <br/>
+            </Container>
+            <Container>
+                <h1 className="doc-paragraph" variant="primary"># Plant json API Documentation</h1>
                 <p>
                     The Dashboard part of the project takes this data to make more accurate graphs. <br/>
                     This table show the fields used for every plant in the database. 

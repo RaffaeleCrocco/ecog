@@ -110,15 +110,15 @@
         },
         "stats" : {
             "lifespan" : "",
-            "seasonal" : true,
+            "seasonal" : true, 
             "months" : ["june", "july", "august", "semptember"],
-            "temperature" : [20.0, 25.0, 22.5],
+            "temperature" : [20.0, 25.0, 22.5], 
             "humidity" : {
                 "terrain" : [18, 25, 21],
                 "air" : [25, 55, 40]
             },
             "light" : {
-                "time" : []
+                "time" : [] 
             }
         },
         "substances" : {
@@ -129,7 +129,7 @@
         "watering" : {
             "month" : [
                 {
-                   "lable" : "summer",
+                   "lable" : "summer", 
                    "times" : [2, 1]
                 },
                 {

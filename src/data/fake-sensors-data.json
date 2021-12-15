@@ -1,8 +1,0 @@
-{
-    "temperature": 23.5,
-    "humidity" : {
-        "air" : 20,
-        "terrain" : 50
-    },
-    "lightExposure": "exposed"
-}
