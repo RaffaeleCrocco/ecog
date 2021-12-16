@@ -20,7 +20,7 @@ For example, in my case the system reserved for himself `192.168.1.2`.
 
 #### PUT
 
-```http
+```javascript
   PUT ${ip reserver by device}/${path}
 ```
 
@@ -30,7 +30,7 @@ For example, in my case the system reserved for himself `192.168.1.2`.
 
 #### GET
 
-```http
+```javascript
   GET ${ip reserver by device}/${path}
 ```
 
@@ -46,7 +46,7 @@ For example, in my case the system reserved for himself `192.168.1.2`.
 
 ## Plant json API
 Plant data are stored in a `.json` file to make more accurate comparization with system extracted data. 
-```bash
+```text
 plant object  
 ├── name
 │   ├── common  [string]
