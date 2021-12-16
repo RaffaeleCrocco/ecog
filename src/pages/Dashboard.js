@@ -79,7 +79,7 @@ const Dashboard = (props) => {
                         You have planted <b>{database[props.plant].name.species}</b> known as {database[props.plant].name.common}, medium lifespan expected is {database[props.plant].stats.lifespan}. <br/>
                         {
                           database[props.plant].stats.seasonal ? 
-                          "This plant is seasonal. Best month to plant are: " + database[props.plant].stats.months + "." :
+                          "This plant is seasonal. Best months to plant are: " + database[props.plant].stats.months + "." :
                           "This plant is not seasonal."
                         }
                         <hr/>

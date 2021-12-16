@@ -8,9 +8,9 @@
             "lifespan" : "9 to 11 months",
             "seasonal" : true,
             "months" : [" june", " july", " august", " semptember"],
-            "temperature" : [20.0, 25.0, 22.5],
+            "temperature" : [18.0, 30.0, 25.0],
             "humidity" : {
-                "terrain" : [18, 25, 21],
+                "terrain" : [30, 42, 40],
                 "air" : [25, 55, 40]
             },
             "light" : {
@@ -20,7 +20,7 @@
         "watering" : {
             "month" : [
                 {
-                   "lable" : "august",
+                   "lable" : "hot periods",
                    "times" : ["2 times", "day"]
                 },
                 {
@@ -39,13 +39,13 @@
             "lifespan" : "4-5 years",
             "seasonal" : false,
             "months" : [],
-            "temperature" : [10.0, 30.0, 20.0],
+            "temperature" : [12.0, 20.0, 17.5],
             "humidity" : {
-                "terrain" : [25, 30, 35],
-                "air" : [25, 55, 40]
+                "terrain" : [20, 30, 24.5],
+                "air" : [20, 25, 22.5]
             },
             "light" : {
-                "time" : [12, 12]
+                "time" : [12, 14]
             }
         },
         "watering" : {
@@ -63,27 +63,27 @@
             "species" : "salvia rosmarinus Schleid"
         },
         "stats" : {
-            "lifespan" : "",
-            "seasonal" : true,
-            "months" : ["june", "july", "august", "semptember"],
-            "temperature" : [20.0, 25.0, 22.5],
+            "lifespan" : "a lot of years",
+            "seasonal" : false,
+            "months" : [],
+            "temperature" : [10.0, 23.0, 20.5],
             "humidity" : {
                 "terrain" : [18, 25, 21],
-                "air" : [25, 55, 40]
+                "air" : [30, 45, 40]
             },
             "light" : {
-                "time" : []
+                "time" : [8, 9]
             }
         },
         "watering" : {
             "month" : [
                 {
-                   "lable" : "summer",
-                   "times" : [2, 1]
+                   "lable" : "spring and summer",
+                   "times" : ["2 times", "day"]
                 },
                 {
-                    "lable" : "winter, spring, autumn",
-                    "times" : [1, 1] 
+                    "lable" : "winter and autumn",
+                    "times" : ["1 times", "time the terrain is dry"] 
                 }
             ]
         }
@@ -94,27 +94,23 @@
             "species" : "thymys vulgarius"
         },
         "stats" : {
-            "lifespan" : "",
+            "lifespan" : "3 to 4 years",
             "seasonal" : true, 
-            "months" : ["june", "july", "august", "semptember"],
-            "temperature" : [20.0, 25.0, 22.5], 
+            "months" : ["march", "april", "may"],
+            "temperature" : [12.0, 20.0, 17.5], 
             "humidity" : {
-                "terrain" : [18, 25, 21],
-                "air" : [25, 55, 40]
+                "terrain" : [18, 27, 23.5],
+                "air" : [25, 55, 52]
             },
             "light" : {
-                "time" : [] 
+                "time" : [6, 8] 
             }
         },
         "watering" : {
             "month" : [
                 {
-                   "lable" : "summer", 
-                   "times" : [2, 1]
-                },
-                {
-                    "lable" : "winter, spring, autumn",
-                    "times" : [1, 1] 
+                    "lable" : "the entire year",
+                    "times" : ["1 time", "time the terrain is dry"]
                 }
             ]
         }
@@ -125,27 +121,23 @@
             "species" : "mentha × piperita"
         },
         "stats" : {
-            "lifespan" : "",
-            "seasonal" : true,
-            "months" : ["june", "july", "august", "semptember"],
-            "temperature" : [20.0, 25.0, 22.5],
+            "lifespan" : "2 years",
+            "seasonal" : false,
+            "months" : [],
+            "temperature" : [13.0, 21.5, 20.5],
             "humidity" : {
-                "terrain" : [18, 25, 21],
-                "air" : [25, 55, 40]
+                "terrain" : [25, 40, 36.5],
+                "air" : [25, 57, 55]
             },
             "light" : {
-                "time" : []
+                "time" : [12, 14]
             }
         },
         "watering" : {
             "month" : [
                 {
-                   "lable" : "summer",
-                   "times" : [2, 1]
-                },
-                {
-                    "lable" : "winter, spring, autumn",
-                    "times" : [1, 1] 
+                    "lable" : "the entire year",
+                    "times" : ["1 time", "time the terrain starts to dry"]
                 }
             ]
         }
@@ -156,27 +148,50 @@
             "species" : "allium schoenoprasum"
         },
         "stats" : {
-            "lifespan" : "",
-            "seasonal" : true,
-            "months" : ["june", "july", "august", "semptember"],
-            "temperature" : [20.0, 25.0, 22.5],
+            "lifespan" : "3 years",
+            "seasonal" : false,
+            "months" : [],
+            "temperature" : [11.5, 20.5, 18.5],
             "humidity" : {
-                "terrain" : [18, 25, 21],
-                "air" : [25, 55, 40]
+                "terrain" : [25, 45, 37.5],
+                "air" : [25, 55, 48]
             },
             "light" : {
-                "time" : []
+                "time" : [7, 9]
             }
         },
         "watering" : {
             "month" : [
                 {
-                   "lable" : "summer",
-                   "times" : [2, 1]
-                },
+                    "lable" : "the entire year",
+                    "times" : ["1 time", "time the terrain is getting dry"]
+                }
+            ]
+        }
+    },
+    "origan" : {
+        "name" : {
+            "common" : "origan",
+            "species" : "origanum vulgare"
+        },
+        "stats" : {
+            "lifespan" : "2 years",
+            "seasonal" : false,
+            "months" : [],
+            "temperature" : [12.5, 21.5, 20.5],
+            "humidity" : {
+                "terrain" : [18, 25, 21],
+                "air" : [25, 55, 50]
+            },
+            "light" : {
+                "time" : [12, 14]
+            }
+        },
+        "watering" : {
+            "month" : [
                 {
-                    "lable" : "winter, spring, autumn",
-                    "times" : [1, 1] 
+                    "lable" : "the entire year",
+                    "times" : ["1 time", "time the terrain is totally dry"]
                 }
             ]
         }
@@ -187,120 +202,23 @@
             "species" : "petroselinum crispum"
         },
         "stats" : {
-            "lifespan" : "",
-            "seasonal" : true,
-            "months" : ["june", "july", "august", "semptember"],
-            "temperature" : [20.0, 25.0, 22.5],
+            "lifespan" : "1 to 2 years",
+            "seasonal" : false,
+            "months" : [],
+            "temperature" : [13.5, 21.0, 19.5],
             "humidity" : {
-                "terrain" : [18, 25, 21],
-                "air" : [25, 55, 40]
+                "terrain" : [30, 50, 45],
+                "air" : [25, 55, 50]
             },
             "light" : {
-                "time" : []
+                "time" : [7, 8]
             }
         },
         "watering" : {
             "month" : [
                 {
-                   "lable" : "summer",
-                   "times" : [2, 1]
-                },
-                {
-                    "lable" : "winter, spring, autumn",
-                    "times" : [1, 1] 
-                }
-            ]
-        }
-    },
-    "origan" : {
-        "name" : {
-            "common" : "origan",
-            "species" : "origanum "
-        },
-        "stats" : {
-            "lifespan" : "",
-            "seasonal" : true,
-            "months" : ["june", "july", "august", "semptember"],
-            "temperature" : [20.0, 25.0, 22.5],
-            "humidity" : {
-                "terrain" : [18, 25, 21],
-                "air" : [25, 55, 40]
-            },
-            "light" : {
-                "time" : []
-            }
-        },
-        "watering" : {
-            "month" : [
-                {
-                   "lable" : "summer",
-                   "times" : [2, 1]
-                },
-                {
-                    "lable" : "winter, spring, autumn",
-                    "times" : [1, 1] 
-                }
-            ]
-        }
-    },
-    "marjoram" : {
-        "name" : {
-            "common" : "marjoram",
-            "species" : "origanum majorana "
-        },
-        "stats" : {
-            "lifespan" : "",
-            "seasonal" : true,
-            "months" : ["june", "july", "august", "semptember"],
-            "temperature" : [20.0, 25.0, 22.5],
-            "humidity" : {
-                "terrain" : [18, 25, 21],
-                "air" : [25, 55, 40]
-            },
-            "light" : {
-                "time" : []
-            }
-        },
-        "watering" : {
-            "month" : [
-                {
-                   "lable" : "summer",
-                   "times" : [2, 1]
-                },
-                {
-                    "lable" : "winter, spring, autumn",
-                    "times" : [1, 1] 
-                }
-            ]
-        }
-    },
-    "coriander" : {
-        "name" : {
-            "common" : "coriander",
-            "species" : "coriandrum sativum"
-        },
-        "stats" : {
-            "lifespan" : "",
-            "seasonal" : true,
-            "months" : ["june", "july", "august", "semptember"],
-            "temperature" : [20.0, 25.0, 22.5],
-            "humidity" : {
-                "terrain" : [18, 25, 21],
-                "air" : [25, 55, 40]
-            },
-            "light" : {
-                "time" : []
-            }
-        },
-        "watering" : {
-            "month" : [
-                {
-                   "lable" : "summer",
-                   "times" : [2, 1]
-                },
-                {
-                    "lable" : "winter, spring, autumn",
-                    "times" : [1, 1] 
+                    "lable" : "the entire year",
+                    "times" : ["1 time", "day"]
                 }
             ]
         }

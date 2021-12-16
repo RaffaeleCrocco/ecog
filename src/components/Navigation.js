@@ -32,7 +32,7 @@ const Navigation = (props) => {
                     <Link to="/">
                         <Navbar.Brand href="#home">
                             <img src={logo} alt="logo" style={{width:'80px',paddingTop:'20px'}}/>
-                            <span style={{paddingLeft:'20px'}}>eco-g prototyping {props.plant}</span>
+                            <span style={{paddingLeft:'20px'}}>prototyping {props.plant}</span>
                         </Navbar.Brand>
                     </Link>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
