@@ -17,11 +17,6 @@
                 "time" : [7, 12]
             }
         },
-        "substances" : {
-            "air" : {
-
-            }
-        },
         "watering" : {
             "month" : [
                 {
@@ -53,11 +48,6 @@
                 "time" : [12, 12]
             }
         },
-        "substances" : {
-            "air" : {
-
-            }
-        },
         "watering" : {
             "month" : [
                 {
@@ -83,11 +73,6 @@
             },
             "light" : {
                 "time" : []
-            }
-        },
-        "substances" : {
-            "air" : {
-
             }
         },
         "watering" : {
@@ -121,11 +106,6 @@
                 "time" : [] 
             }
         },
-        "substances" : {
-            "air" : {
-
-            }
-        },
         "watering" : {
             "month" : [
                 {
@@ -155,11 +135,6 @@
             },
             "light" : {
                 "time" : []
-            }
-        },
-        "substances" : {
-            "air" : {
-
             }
         },
         "watering" : {
@@ -193,11 +168,6 @@
                 "time" : []
             }
         },
-        "substances" : {
-            "air" : {
-
-            }
-        },
         "watering" : {
             "month" : [
                 {
@@ -227,11 +197,6 @@
             },
             "light" : {
                 "time" : []
-            }
-        },
-        "substances" : {
-            "air" : {
-
             }
         },
         "watering" : {
@@ -265,11 +230,6 @@
                 "time" : []
             }
         },
-        "substances" : {
-            "air" : {
-
-            }
-        },
         "watering" : {
             "month" : [
                 {
@@ -301,11 +261,6 @@
                 "time" : []
             }
         },
-        "substances" : {
-            "air" : {
-
-            }
-        },
         "watering" : {
             "month" : [
                 {
@@ -335,11 +290,6 @@
             },
             "light" : {
                 "time" : []
-            }
-        },
-        "substances" : {
-            "air" : {
-
             }
         },
         "watering" : {
