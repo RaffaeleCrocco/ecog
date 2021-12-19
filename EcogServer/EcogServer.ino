@@ -7,8 +7,8 @@
 #include "StaticFiles.h"
 #include "DHTesp.h" //hum and temp sensor for air
 #include "moist.h" //hum sensor for terrain
-#include "DS18B20.h" //temp sensor for terrain
 #include "photoresistor.h" //light sensor
+#include "temperatureSensor.h" //temp sensor for terrain
 
 //##################################
 //     intial configuration
@@ -19,8 +19,8 @@
 #define WIFI_PASSWORD "c36bkPbKh7SCT6zAd3HH3yQ7"
 
 //define pin for each sensor
-#define LED 5
-#define DHT11_PIN 4
+#define LED 15
+#define DHT11_PIN 2
 #define MOIST_PIN 0
 #define DS18B20_PIN 14
 #define PHOTORESISTOR_PIN 12
@@ -28,8 +28,8 @@
 //define object using costructors
 DHTesp DHT;
 moist MOIST;
-ds18b20 DS18B20;
 photoresistor PHOTORESISTOR;
+temperatureSensor DS18B20(DS18B20_PIN);
 WiFiServer server(80);
 Application app;
 
@@ -61,9 +61,10 @@ void readTerrHum(Request &req, Response &res){
 }
 
 void readTerrTemp(Request &req, Response &res){
-  terrTemp = DS18B20.getValue(DS18B20_PIN);
+  terrTemp = DS18B20.getTemperature();
   res.print(terrTemp);
 }
+
 
 void readLed(Request &req, Response &res){
   res.print(ledOn);

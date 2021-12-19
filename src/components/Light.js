@@ -25,7 +25,7 @@ const Light = (props) => {
                     <p className='mt-3'>
                         This plant require {database[props.plant].stats.light.time[0]} hours of sunlight exposure. 
                         When not possible, provide at least {database[props.plant].stats.light.time[1]} hours of
-                        artificial light exposure. System is currently: <strong>{isExposed ? "exposed" : "not exposed"}.</strong>.
+                        artificial light exposure. System is currently: <strong>{isExposed ? "exposed" : "not exposed"}</strong>.
                     </p>
                     <Led/>
                 </Col> 
