@@ -4,9 +4,12 @@
 #include <Arduino.h>
 #endif
 
-class photoresistor
+class Photoresistor
 {
-  public:
-      int getValue(int sensorPin);
+private:
+  int pin;
+
+public:
+  Photoresistor(int _pin);
+  int getValue();
 };
-  

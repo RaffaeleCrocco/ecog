@@ -6,9 +6,12 @@
 #include <Arduino.h>
 #endif
 
-class moist
+class Moist
 {
-  public:
-      int getValue(int sensorPin);
+private:
+  int pin;
+
+public:
+  Moist(int _pin);
+  int getValue();
 };
-  

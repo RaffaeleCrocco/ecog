@@ -5,35 +5,35 @@
 #include <ESP8266WiFi.h>
 #include "aWOT.h"
 #include "StaticFiles.h"
-#include "DHTesp.h" //hum and temp sensor for air
-#include "moist.h" //hum sensor for terrain
-#include "photoresistor.h" //light sensor
+#include "DHTesp.h"            //hum and temp sensor for air
+#include "moist.h"             //hum sensor for terrain
+#include "photoresistor.h"     //light sensor
 #include "temperatureSensor.h" //temp sensor for terrain
 
 //##################################
 //     intial configuration
 //##################################
 
-//change this with your home wifi credential
+// change this with your home wifi credential
 #define WIFI_SSID "TIM-58389203"
 #define WIFI_PASSWORD "c36bkPbKh7SCT6zAd3HH3yQ7"
 
-//define pin for each sensor
+// define pin for each sensor
 #define LED 15
 #define DHT11_PIN 2
 #define MOIST_PIN 0
 #define DS18B20_PIN 14
 #define PHOTORESISTOR_PIN 12
 
-//define object using costructors
+// define object using costructors
 DHTesp DHT;
-moist MOIST;
-photoresistor PHOTORESISTOR;
+Moist MOIST(MOIST_PIN);
+Photoresistor PHOTORESISTOR(PHOTORESISTOR_PIN);;
 temperatureSensor DS18B20(DS18B20_PIN);
 WiFiServer server(80);
 Application app;
 
-//define variables to store sensors data
+// define variables to store sensors data
 bool ledOn;
 float airTemp;
 float airHum;
@@ -45,37 +45,43 @@ bool light;
 //     functions to send data
 //##################################
 
-void readAirTemp(Request &req, Response &res){
+void readAirTemp(Request &req, Response &res)
+{
   airTemp = DHT.getTemperature();
   res.print(airTemp);
 }
 
-void readAirHum(Request &req, Response &res){
+void readAirHum(Request &req, Response &res)
+{
   airHum = DHT.getHumidity();
   res.print(airHum);
 }
 
-void readTerrHum(Request &req, Response &res){
-  terrHum = MOIST.getValue(MOIST_PIN);
+void readTerrHum(Request &req, Response &res)
+{
+  terrHum = MOIST.getValue();
   res.print(terrHum);
 }
 
-void readTerrTemp(Request &req, Response &res){
+void readTerrTemp(Request &req, Response &res)
+{
   terrTemp = DS18B20.getTemperature();
   res.print(terrTemp);
 }
 
-
-void readLed(Request &req, Response &res){
+void readLed(Request &req, Response &res)
+{
   res.print(ledOn);
 }
 
-void readLight(Request &req, Response &res){
-  light = PHOTORESISTOR.getValue(PHOTORESISTOR_PIN);
+void readLight(Request &req, Response &res)
+{
+  light = PHOTORESISTOR.getValue();
   res.print(light);
 }
 
-void updateLed(Request &req, Response &res){
+void updateLed(Request &req, Response &res)
+{
   ledOn = (req.read() != '0');
   digitalWrite(LED, ledOn);
   return readLed(req, res);
@@ -85,22 +91,25 @@ void updateLed(Request &req, Response &res){
 //         setup function
 //##################################
 
-void setup() {
-
-  pinMode(LED, OUTPUT); //setting led pin as an output
-  DHT.setup(DHT11_PIN, DHTesp::DHT11); //setting up the dht sensor
+void setup()
+{
   
-  Serial.begin(115200); //setting the serial to print IP the device reserve for itself
 
-  //wifi configuration and IP printing
+  pinMode(LED, OUTPUT);                // setting led pin as an output
+  DHT.setup(DHT11_PIN, DHTesp::DHT11); // setting up the dht sensor
+
+  Serial.begin(115200); // setting the serial to print IP the device reserve for itself
+
+  // wifi configuration and IP printing
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-  while (WiFi.status() != WL_CONNECTED) {
+  while (WiFi.status() != WL_CONNECTED)
+  {
     delay(500);
     Serial.print(".");
   }
   Serial.println(WiFi.localIP());
 
-  //method for sensors
+  // method for sensors
   app.get("/led", &readLed);
   app.put("/led", &updateLed);
   app.get("/airtemp", &readAirTemp);
@@ -110,14 +119,16 @@ void setup() {
   app.get("/light", &readLight);
 
   app.use(staticFiles());
-  server.begin(); //starting the server
+  server.begin(); // starting the server
 }
 
-void loop() {
+void loop()
+{
   WiFiClient client = server.available();
 
-  //we keep processing data until the client is connected to the server
-  if (client.connected()) {
+  // we keep processing data until the client is connected to the server
+  if (client.connected())
+  {
     app.process(&client);
   }
 }

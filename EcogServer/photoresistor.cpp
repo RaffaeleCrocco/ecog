@@ -1,6 +1,11 @@
 #include "photoresistor.h"
 
-int photoresistor::getValue(int PHOTORESISTOR_PIN)
+Photoresistor::Photoresistor(int _pin)
 {
-  return !digitalRead(PHOTORESISTOR_PIN);
+  Photoresistor::pin = _pin;
+}
+
+int Photoresistor::getValue()
+{
+  return !digitalRead(Photoresistor::pin);
 }

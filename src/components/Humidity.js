@@ -14,7 +14,14 @@ const Humidity = (props) => {
     useEffect(()=> {
         fetch('/airhum')
         .then(req => req.text())
+        .then(text => {
+            if (text === "nan") throw new TypeError("attendo humidità")
+            else return text
+        })
         .then(setAirHum)
+        .catch(error => {
+            throw(error);
+        })
     })
 
     const [terrHum, setTerrHum] = useState(0)
