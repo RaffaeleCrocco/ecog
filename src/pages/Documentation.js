@@ -5,7 +5,7 @@ import { Container, Table, Alert } from 'react-bootstrap';      //component
 import Navigation from '../components/Navigation.js'
 const Documentation = () => {
     return (
-        <div>
+        <>
             <Navigation/>
             <Container>
                 <h1 className="doc-paragraph" variant="primary"># Microcontroller server API Documentation</h1>
@@ -178,7 +178,7 @@ const Documentation = () => {
                 </Table>
                 <br/><br/><br/>
             </Container>
-        </div>
+        </>
     );
 };
 

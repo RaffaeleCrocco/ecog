@@ -47,7 +47,10 @@ const Navigation = (props) => {
                                 />
                             </Nav.Link>
                             <Link to="/documentation">
-                                <Nav.Link href="#home">Nerdy stuff</Nav.Link>
+                                <Nav.Link href="#def">APIs</Nav.Link>
+                            </Link>
+                            <Link to="/project">
+                                <Nav.Link href="#def">Models</Nav.Link>
                             </Link>
                         </Nav>
                     </Navbar.Collapse>

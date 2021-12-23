@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Temperature from "../components/Temperature";
 import { Container, Row, Col, Alert, Card } from "react-bootstrap";
 import Humidity from "../components/Humidity";
@@ -61,6 +61,7 @@ const Dashboard = (props) => {
     },
   ];
   
+  const [device, setDevice] = useState(true);
 
   return (
     <div>
@@ -69,6 +70,9 @@ const Dashboard = (props) => {
         <div>
           <Row>
             <Col sm="12">
+              {
+                device
+                ? 
                 <Alert variant="success" xs="auto">
                   <Row>
                     <Col xs="auto">
@@ -88,25 +92,37 @@ const Dashboard = (props) => {
                     </Col>
                   </Row>
                 </Alert>
+                :
+                <Alert variant="danger" xs="auto">
+                  <Row>
+                    <Col xs="auto">
+                      <RiPlantLine size="1.5rem" color="red"/>
+                    </Col>
+                    <Col>
+                      <strong>No device connected.</strong> All the values will be shown as 0.
+                    </Col>
+                  </Row> 
+                </Alert>
+              }
             </Col>
           </Row>
           <Row className="mb-5">
             <Col>
               <Row className="mt-5">
                 <Col md="">
-                  <Temperature plant={props.plant}/>
+                  <Temperature plant={props.plant} setDevice={setDevice}/>
                 </Col>
               </Row>
               <Row className="mt-5">
                 <Col md="">
-                  <Humidity plant={props.plant}/> 
+                  <Humidity plant={props.plant} setDevice={setDevice}/> 
                 </Col>
               </Row>
             </Col>
             <Col sm="3" className="d-flex mt-5">
               <Card>
                 <Card.Body className="mt-4">
-                  <Light plant={props.plant}/>
+                  <Light plant={props.plant} setDevice={setDevice}/>
                 </Card.Body>
               </Card>
             </Col>

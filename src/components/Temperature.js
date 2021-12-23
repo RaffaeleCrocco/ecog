@@ -25,11 +25,14 @@ const Temperature = (props) => {
         .then(req => req.text())
         .then(text => {
             if (text === "nan") throw new TypeError("attendo temperatura")
+            else if (text === `Proxy error: Could not proxy request /airtemp from localhost:3000 to http://192.168.1.6/ (EHOSTUNREACH).`) throw new TypeError("Nessun dispositivo connesso")
             else return text
         })
         .then(setAirTemp)
         .catch(error => {
-            throw(error);
+            setAirTemp(0)
+            props.setDevice(false)
+            console.log(error);
         })
     })
 
@@ -37,7 +40,16 @@ const Temperature = (props) => {
     useEffect(()=> {
         fetch('/terrtemp')
         .then(req => req.text())
+        .then(text => {
+            if (text === `Proxy error: Could not proxy request /terrtemp from localhost:3000 to http://192.168.1.6/ (EHOSTUNREACH).`) throw new TypeError("Nessun dispositivo connesso")
+            else return text
+        })
         .then(setTerrTemp)
+        .catch(error => {
+            setTerrTemp(0)
+            props.setDevice(false)
+            console.log(error);
+        })
     })
     
 

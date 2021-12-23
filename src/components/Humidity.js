@@ -15,12 +15,15 @@ const Humidity = (props) => {
         fetch('/airhum')
         .then(req => req.text())
         .then(text => {
-            if (text === "nan") throw new TypeError("attendo humidità")
+            if (text === "nan") throw new TypeError("Attendo umidità")
+            else if (text === `Proxy error: Could not proxy request /airhum from localhost:3000 to http://192.168.1.6/ (EHOSTUNREACH).`) throw new TypeError("Nessun dispositivo connesso")
             else return text
         })
         .then(setAirHum)
         .catch(error => {
-            throw(error);
+            setAirHum(0)
+            props.setDevice(false)
+            console.log(error);
         })
     })
 
@@ -28,7 +31,16 @@ const Humidity = (props) => {
     useEffect(()=> {
         fetch('/terrhum')
         .then(req => req.text())
+        .then(text => {
+            if (text === `Proxy error: Could not proxy request /terrhum from localhost:3000 to http://192.168.1.6/ (EHOSTUNREACH).`) throw new TypeError("Nessun dispositivo connesso")
+            else return text
+        })
         .then(setTerrHum)
+        .catch(error => {
+            setTerrHum(0)
+            props.setDevice(false)
+            console.log(error);
+        })
     })
 
     const airHumBar = <ProgressBar variant="secondary" now={airHum} label={`${airHum}%`} />;
