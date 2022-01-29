@@ -19,7 +19,7 @@
 #define WIFI_PASSWORD "c36bkPbKh7SCT6zAd3HH3yQ7"
 
 // define pin for each sensor
-#define LED 15
+#define LED 16
 #define DHT11_PIN 2
 #define MOIST_PIN 0
 #define DS18B20_PIN 14
